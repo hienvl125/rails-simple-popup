@@ -1,1 +1,7 @@
-<h1>This is home page</h1>
+<div data-controller="page">
+  <h1>Home Page</h1>
+  <button data-action="click->page#openPopup">Show Popup</button>
+  <%= render "shared/popup", controller_name: "page" do %>
+    <p>Custom HTML here</p>
+  <% end %>
+</div>
